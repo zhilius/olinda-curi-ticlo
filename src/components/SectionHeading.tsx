@@ -15,7 +15,7 @@ export default function SectionHeading({
     <div className="mx-auto max-w-3xl text-center">
       <p
         className={`text-xs font-semibold uppercase tracking-[0.25em] ${
-          dark ? 'text-curi-gold-light' : 'text-curi-charcoal/60'
+          dark ? 'text-curi-gold-light' : 'text-curi-charcoal/80'
         }`}
       >
         {eyebrow}
@@ -30,7 +30,7 @@ export default function SectionHeading({
       {subtitle && (
         <p
           className={`mt-4 text-base leading-relaxed ${
-            dark ? 'text-curi-surface/70' : 'text-curi-charcoal/60'
+            dark ? 'text-curi-surface/70' : 'text-curi-charcoal/80'
           }`}
         >
           {subtitle}

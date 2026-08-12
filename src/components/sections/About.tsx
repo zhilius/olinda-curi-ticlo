@@ -33,8 +33,10 @@ export default function About() {
           <Reveal>
             <div className="self-center justify-self-center overflow-hidden rounded-2xl lg:max-w-sm">
               <img
-                src="/olinda-portrait.jpg"
+                src="/olinda-portrait.webp"
                 alt="Retrato de Olinda"
+                width={768}
+                height={1708}
                 className="aspect-[3/4] w-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
@@ -63,7 +65,7 @@ export default function About() {
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
               {values.map((value) => (
                 <div key={value.title}>
-                  <p className="font-serif text-lg text-curi-gold">
+                  <p className="font-serif text-lg text-curi-gold-dark">
                     {value.title}
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-curi-charcoal/60">

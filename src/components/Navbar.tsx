@@ -14,15 +14,15 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3 leading-none">
           <img
-            src="/logo.png"
+            src="/logo.webp"
             alt="Logo de Curi Asesores"
             className="h-10 w-10 object-contain"
           />
           <span className="flex flex-col">
             <span className="font-serif text-lg font-semibold text-curi-charcoal">
-              Curi <span className="text-curi-gold">Asesores</span>
+              Curi <span className="text-curi-gold-dark">Asesores</span>
             </span>
-            <span className="mt-0.5 text-[10px] uppercase tracking-[0.3em] text-curi-charcoal/50">
+            <span className="mt-0.5 text-[10px] uppercase tracking-[0.3em] text-curi-charcoal/75">
               Inmuebles · Energía
             </span>
           </span>

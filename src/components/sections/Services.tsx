@@ -88,7 +88,8 @@ export default function Services() {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-block text-sm font-semibold text-curi-gold transition-colors hover:text-curi-gold-light"
+                aria-label={`Solicitar información sobre ${service.title} por WhatsApp`}
+                className="mt-8 inline-block text-sm font-semibold text-curi-gold-dark transition-colors hover:text-curi-gold"
               >
                 Solicitar información →
               </a>

@@ -7,7 +7,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80')",
+            "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=75')",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-curi-charcoal/70 via-curi-charcoal/40 to-curi-charcoal" />

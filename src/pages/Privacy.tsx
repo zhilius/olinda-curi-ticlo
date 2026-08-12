@@ -59,13 +59,13 @@ export default function Privacy() {
   return (
     <main className="bg-curi-bg py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-curi-charcoal/60">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-curi-charcoal/80">
           Cumplimiento europeo
         </p>
         <h1 className="mt-3 font-serif text-3xl text-curi-charcoal md:text-4xl">
           Política de privacidad y cookies
         </h1>
-        <p className="mt-4 leading-relaxed text-curi-charcoal/60">
+        <p className="mt-4 leading-relaxed text-curi-charcoal/80">
           En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y de la Ley
           Orgánica 3/2018 (LOPDGDD), te informamos de cómo tratamos tus datos.
         </p>

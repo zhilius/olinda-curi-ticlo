@@ -36,7 +36,7 @@ export default function Testimonials() {
             <Reveal key={testimonial.name} delay={index * 150}>
               <figure className="flex h-full flex-col justify-between rounded-2xl border border-curi-border bg-curi-surface p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div>
-                  <div className="flex gap-1 text-curi-gold">
+                  <div className="flex gap-1 text-curi-gold-dark">
                     {'★★★★★'.split('').map((star, i) => (
                       <span key={i}>{star}</span>
                     ))}

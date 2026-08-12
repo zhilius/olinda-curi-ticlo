@@ -35,7 +35,7 @@ export default function Contact() {
             </h3>
             <ul className="mt-6 space-y-4 text-curi-charcoal/70">
               <li>
-                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/50">
+                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/75">
                   Teléfono
                 </p>
                 <a href={CONTACT.phoneHref} className="hover:text-curi-gold">
@@ -43,7 +43,7 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/50">
+                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/75">
                   Email
                 </p>
                 <a
@@ -54,7 +54,7 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/50">
+                <p className="text-sm font-semibold uppercase tracking-wider text-curi-charcoal/75">
                   Cobertura
                 </p>
                 <p>{CONTACT.location}</p>
@@ -152,7 +152,7 @@ export default function Contact() {
                 He leído y acepto la{' '}
                 <a
                   href="#/privacidad"
-                  className="font-medium text-curi-gold underline transition-colors hover:text-curi-gold-light"
+                  className="font-medium text-curi-gold-dark underline transition-colors hover:text-curi-gold"
                 >
                   política de privacidad y cookies
                 </a>
