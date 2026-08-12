@@ -2,7 +2,7 @@ import { whatsappLink } from '../../data/contact'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-curi-charcoal text-curi-surface">
+    <section className="relative flex min-h-dvh flex-col overflow-hidden bg-curi-charcoal text-curi-surface">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
@@ -12,7 +12,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-curi-charcoal/70 via-curi-charcoal/40 to-curi-charcoal" />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-28 text-center sm:px-6 md:py-40 lg:px-8">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-center px-4 py-24 text-center sm:px-6 lg:px-8">
         <p className="animate-fade-in-up text-xs font-semibold uppercase tracking-[0.35em] text-curi-gold-light">
           Inmuebles en Madrid · Energía en toda España
         </p>

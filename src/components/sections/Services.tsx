@@ -46,7 +46,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="scroll-mt-20 py-20 md:py-28">
+    <section id="servicios" className="flex min-h-dvh scroll-mt-20 flex-col justify-center py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Servicios"
