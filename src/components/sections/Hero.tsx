@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import { whatsappLink } from '../../data/contact'
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-dvh flex-col overflow-hidden bg-curi-charcoal text-curi-surface">
+    <section className="relative flex h-[calc(100dvh-4rem)] flex-col overflow-hidden bg-curi-charcoal text-curi-surface">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
@@ -47,6 +48,24 @@ export default function Hero() {
           </a>
         </div>
       </div>
+
+      <Link
+        to="/#servicios"
+        aria-label="Bajar a la sección de servicios"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-curi-gold-light transition-colors hover:text-curi-gold"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-8 w-8 animate-bounce-down"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </Link>
     </section>
   )
 }
