@@ -14,6 +14,7 @@ España.
 ## Páginas
 
 - `/` — Landing: servicios, sobre mí, cifras, opiniones y contacto
+- `/privacidad` — Política de privacidad y cookies
 
 ## Desarrollo
 

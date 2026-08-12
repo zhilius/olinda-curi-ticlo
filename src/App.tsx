@@ -3,7 +3,9 @@ import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import CookieBanner from './components/CookieBanner'
 import Home from './pages/Home'
+import Privacy from './pages/Privacy'
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation()
@@ -31,10 +33,12 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/privacidad" element={<Privacy />} />
           </Routes>
         </div>
         <Footer />
         <WhatsAppButton />
+        <CookieBanner />
       </div>
     </HashRouter>
   )

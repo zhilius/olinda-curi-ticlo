@@ -40,6 +40,11 @@ export default function Footer() {
                 Contacto
               </a>
             </li>
+            <li>
+              <a href="#/privacidad" className="hover:text-gold-light">
+                Privacidad y cookies
+              </a>
+            </li>
           </ul>
         </div>
 

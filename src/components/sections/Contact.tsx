@@ -9,6 +9,7 @@ export default function Contact() {
   const [email, setEmail] = useState('')
   const [service, setService] = useState('Compra / venta / alquiler de inmuebles')
   const [message, setMessage] = useState('')
+  const [accepted, setAccepted] = useState(false)
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -138,6 +139,26 @@ export default function Contact() {
                 className="mt-2 w-full resize-none rounded-lg border border-stone-300 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-gold"
               />
             </div>
+
+            <label className="mt-6 flex items-start gap-3 text-sm text-stone-600">
+              <input
+                type="checkbox"
+                required
+                checked={accepted}
+                onChange={(e) => setAccepted(e.target.checked)}
+                className="mt-0.5 h-4 w-4 shrink-0 accent-gold"
+              />
+              <span>
+                He leído y acepto la{' '}
+                <a
+                  href="#/privacidad"
+                  className="font-medium text-gold-dark underline transition-colors hover:text-gold"
+                >
+                  política de privacidad y cookies
+                </a>
+                .
+              </span>
+            </label>
 
             <button
               type="submit"
