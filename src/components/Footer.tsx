@@ -6,11 +6,12 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <p className="font-serif text-xl text-white">
-            Olinda <span className="text-gold-light">Curi Ticlo</span>
+            Curi <span className="text-gold-light">Asesores</span>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-stone-400">
-            Tu asesora de confianza para comprar, vender o ahorrar en tu
-            factura de la luz, en toda España.
+            Tu asesora de confianza para comprar, vender o alquilar tu
+            inmueble en Madrid y ahorrar en tu factura de la luz en toda
+            España.
           </p>
         </div>
 
@@ -66,7 +67,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-stone-700/60 py-5 text-center text-xs text-stone-500">
-        © {new Date().getFullYear()} Olinda Curi Ticlo · Todos los derechos
+        © {new Date().getFullYear()} Curi Asesores · Todos los derechos
         reservados
       </div>
     </footer>

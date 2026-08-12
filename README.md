@@ -1,7 +1,8 @@
-# Olinda Curi Ticlo · Web
+# Curi Asesores · Web
 
-Landing page del emprendimiento de **Olinda Curi Ticlo**: venta de inmuebles y
-gestión de contratos de electricidad en toda España.
+Landing page del emprendimiento de **Curi Asesores**: compra, venta y
+alquiler de inmuebles en Madrid y gestión de contratos de electricidad en toda
+España.
 
 ## Stack
 
@@ -13,7 +14,6 @@ gestión de contratos de electricidad en toda España.
 ## Páginas
 
 - `/` — Landing: servicios, sobre mí, cifras, opiniones y contacto
-- `/propiedades` — Listado de inmuebles con filtros por tipo
 
 ## Desarrollo
 
@@ -32,4 +32,4 @@ npm run preview
 ## Configuración rápida
 
 Los datos de contacto están centralizados en `src/data/contact.ts`
-(WhatsApp, teléfono y email) y las propiedades en `src/data/properties.ts`.
+(WhatsApp, teléfono y email).

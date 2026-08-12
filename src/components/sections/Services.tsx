@@ -1,4 +1,5 @@
 import SectionHeading from '../SectionHeading'
+import Reveal from '../Reveal'
 import { whatsappLink } from '../../data/contact'
 
 const services = [
@@ -12,13 +13,13 @@ const services = [
         />
       </svg>
     ),
-    title: 'Compra y venta de inmuebles',
+    title: 'Compra, venta y alquiler de inmuebles',
     description:
-      'Te ayudo a encontrar el hogar ideal, tasar tu propiedad al mejor precio y acompañarte en cada trámite de la compraventa, de principio a fin.',
+      'Te ayudo a encontrar el hogar ideal en Madrid, tasar tu propiedad al mejor precio, gestionar un alquiler y acompañarte en cada trámite de principio a fin.',
     bullets: [
       'Búsqueda personalizada de vivienda',
       'Tasación y venta de tu propiedad',
-      'Asesoría legal y documentación',
+      'Gestión de alquileres y contratos',
     ],
   },
   {
@@ -33,7 +34,7 @@ const services = [
     ),
     title: 'Gestión de contratos de electricidad',
     description:
-      'Como gestora independiente, comparo las tarifas de múltiples compañías para que pagues menos en tu factura. Cero coste para ti: yo me encargo de todo el papeleo.',
+      'Como gestora independiente, comparo las tarifas de múltiples compañías para que pagues menos en tu factura, estés donde estés en España. Cero coste para ti: yo me encargo de todo el papeleo.',
     bullets: [
       'Análisis gratuito de tu consumo',
       'Cambio de compañía y tarifa sin coste',
@@ -53,15 +54,13 @@ export default function Services() {
         />
 
         <div className="mt-14 grid gap-8 md:grid-cols-2">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="group rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-xl md:p-10"
-            >
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-sand text-gold">
-                {service.icon}
-              </div>
-              <h3 className="mt-6 font-serif text-2xl text-charcoal">
+          {services.map((service, index) => (
+            <Reveal key={service.title} delay={index * 150}>
+              <article className="group rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:p-10">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-sand text-gold transition-transform duration-300 group-hover:scale-110">
+                  {service.icon}
+                </div>
+                <h3 className="mt-6 font-serif text-2xl text-charcoal">
                 {service.title}
               </h3>
               <p className="mt-3 leading-relaxed text-stone-500">
@@ -85,7 +84,8 @@ export default function Services() {
               >
                 Solicitar información →
               </a>
-            </article>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

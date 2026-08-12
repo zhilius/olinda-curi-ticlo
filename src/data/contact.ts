@@ -1,12 +1,12 @@
 export const CONTACT = {
   name: 'Olinda Curi Ticlo',
-  phone: '+34 600 000 000',
-  phoneHref: 'tel:+34600000000',
-  email: 'hola@olindacuriticlo.com',
-  whatsapp: '34600000000',
+  phone: '+34 634 08 43 75',
+  phoneHref: 'tel:+34634084375',
+  email: 'curiasesores@gmail.com',
+  whatsapp: '34634084375',
   whatsappMessage:
     'Hola Olinda, me gustaría recibir más información sobre tus servicios.',
-  location: 'Toda España · Atención online y visitas concertadas',
+  location: 'Inmuebles en Madrid · Energía en toda España',
 }
 
 export const whatsappLink = (text?: string) =>

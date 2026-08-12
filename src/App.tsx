@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
-import Properties from './pages/Properties'
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation()
@@ -32,7 +31,6 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/propiedades" element={<Properties />} />
           </Routes>
         </div>
         <Footer />

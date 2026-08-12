@@ -1,4 +1,5 @@
 import SectionHeading from '../SectionHeading'
+import Reveal from '../Reveal'
 
 const values = [
   {
@@ -29,24 +30,27 @@ export default function About() {
         />
 
         <div className="mt-14 grid items-center gap-12 lg:grid-cols-2">
-          <div className="overflow-hidden rounded-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
-              alt="Retrato de Olinda Curi Ticlo"
-              className="h-full w-full object-cover"
-            />
-          </div>
+          <Reveal>
+            <div className="self-center justify-self-center overflow-hidden rounded-2xl lg:max-w-sm">
+              <img
+                src="/olinda-portrait.jpg"
+                alt="Retrato de Olinda"
+                className="aspect-[3/4] w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+          </Reveal>
 
-          <div>
+          <Reveal delay={150}>
+            <div>
             <h3 className="font-serif text-2xl text-charcoal md:text-3xl">
-              Del barrio a toda España
+              De Madrid a toda España
             </h3>
             <p className="mt-4 leading-relaxed text-stone-600">
-              Llevo más de ocho años ayudando a familias y empresas a tomar dos
+              Llevo más de tres años ayudando a familias y empresas a tomar dos
               de las decisiones más importantes de su vida: dónde vivir y cuánto
               pagan por la energía que consumen. Empecé acompañando a amigos y
               conocidos en la búsqueda de su primera vivienda y, hoy, gestiono
-              inmuebles y contratos de electricidad por todo el país.
+              inmuebles en Madrid y contratos de electricidad por toda España.
             </p>
             <p className="mt-4 leading-relaxed text-stone-600">
               Mi gran diferencia: la electricidad. Al ser una gestora
@@ -68,7 +72,8 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

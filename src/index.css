@@ -4,13 +4,13 @@
   --font-sans: "Inter", system-ui, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;
 
-  --color-cream: #faf9f6;
-  --color-sand: #f3efe7;
-  --color-charcoal: #1c1917;
-  --color-ink: #2a2622;
-  --color-gold: #b08d57;
-  --color-gold-light: #cbaa7a;
-  --color-gold-dark: #8f6f42;
+  --color-cream: #ffffff;
+  --color-sand: #f7f6ee;
+  --color-charcoal: #10436d;
+  --color-ink: #1e293b;
+  --color-gold: #e78521;
+  --color-gold-light: #f2a552;
+  --color-gold-dark: #c4701a;
 }
 
 html {
@@ -25,4 +25,49 @@ h1,
 h2,
 h3 {
   @apply font-serif;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(231, 133, 33, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(231, 133, 33, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(231, 133, 33, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s ease-out infinite;
 }

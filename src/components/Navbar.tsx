@@ -12,12 +12,19 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-200/70 bg-cream/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex flex-col leading-none">
-          <span className="font-serif text-lg font-semibold text-charcoal">
-            Olinda <span className="text-gold">Curi Ticlo</span>
-          </span>
-          <span className="mt-0.5 text-[10px] uppercase tracking-[0.3em] text-stone-500">
-            Inmuebles · Energía
+        <Link to="/" className="flex items-center gap-3 leading-none">
+          <img
+            src="/logo.png"
+            alt="Logo de Curi Asesores"
+            className="h-10 w-10 object-contain"
+          />
+          <span className="flex flex-col">
+            <span className="font-serif text-lg font-semibold text-charcoal">
+              Curi <span className="text-gold">Asesores</span>
+            </span>
+            <span className="mt-0.5 text-[10px] uppercase tracking-[0.3em] text-stone-500">
+              Inmuebles · Energía
+            </span>
           </span>
         </Link>
 
@@ -55,15 +62,9 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <Link
             to="/#contacto"
-            className="hidden rounded-full bg-charcoal px-5 py-2 text-sm text-cream transition-colors hover:bg-gold sm:inline-block"
+            className="rounded-full bg-charcoal px-5 py-2 text-sm text-cream transition-all duration-300 hover:scale-105 hover:bg-gold"
           >
             Contactar
-          </Link>
-          <Link
-            to="/propiedades"
-            className="rounded-full border border-gold px-5 py-2 text-sm text-gold-dark transition-colors hover:bg-gold hover:text-white"
-          >
-            Propiedades
           </Link>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import SectionHeading from '../SectionHeading'
+import Reveal from '../Reveal'
 
 const testimonials = [
   {
@@ -11,7 +12,7 @@ const testimonials = [
     quote:
       'Vendí mi piso en tiempo récord. Su tasación fue honesta y las gestiones, impecables. La recomendé a toda mi familia.',
     name: 'Antonio García',
-    detail: 'Venta de piso · Valencia',
+    detail: 'Venta de piso · Madrid',
   },
   {
     quote:
@@ -31,26 +32,25 @@ export default function Testimonials() {
         />
 
         <div className="mt-14 grid gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial) => (
-            <figure
-              key={testimonial.name}
-              className="flex flex-col justify-between rounded-2xl border border-stone-200 bg-white p-8 shadow-sm"
-            >
-              <div>
-                <div className="flex gap-1 text-gold">
-                  {'★★★★★'.split('').map((star, i) => (
-                    <span key={i}>{star}</span>
-                  ))}
+          {testimonials.map((testimonial, index) => (
+            <Reveal key={testimonial.name} delay={index * 150}>
+              <figure className="flex h-full flex-col justify-between rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                <div>
+                  <div className="flex gap-1 text-gold">
+                    {'★★★★★'.split('').map((star, i) => (
+                      <span key={i}>{star}</span>
+                    ))}
+                  </div>
+                  <blockquote className="mt-4 leading-relaxed text-stone-600">
+                    “{testimonial.quote}”
+                  </blockquote>
                 </div>
-                <blockquote className="mt-4 leading-relaxed text-stone-600">
-                  “{testimonial.quote}”
-                </blockquote>
-              </div>
-              <figcaption className="mt-6 border-t border-stone-100 pt-4">
-                <p className="font-semibold text-charcoal">{testimonial.name}</p>
-                <p className="text-sm text-stone-500">{testimonial.detail}</p>
-              </figcaption>
-            </figure>
+                <figcaption className="mt-6 border-t border-stone-100 pt-4">
+                  <p className="font-semibold text-charcoal">{testimonial.name}</p>
+                  <p className="text-sm text-stone-500">{testimonial.detail}</p>
+                </figcaption>
+              </figure>
+            </Reveal>
           ))}
         </div>
       </div>
