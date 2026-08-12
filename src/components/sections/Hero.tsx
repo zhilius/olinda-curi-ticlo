@@ -2,7 +2,7 @@ import { whatsappLink } from '../../data/contact'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-charcoal text-white">
+    <section className="relative overflow-hidden bg-curi-charcoal text-curi-surface">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
@@ -10,10 +10,10 @@ export default function Hero() {
             "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/40 to-charcoal" />
+      <div className="absolute inset-0 bg-gradient-to-b from-curi-charcoal/70 via-curi-charcoal/40 to-curi-charcoal" />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-28 text-center sm:px-6 md:py-40 lg:px-8">
-        <p className="animate-fade-in-up text-xs font-semibold uppercase tracking-[0.35em] text-gold-light">
+        <p className="animate-fade-in-up text-xs font-semibold uppercase tracking-[0.35em] text-curi-gold-light">
           Inmuebles en Madrid · Energía en toda España
         </p>
         <h1
@@ -21,10 +21,10 @@ export default function Hero() {
           style={{ animationDelay: '150ms' }}
         >
           Tu próximo hogar y la mejor tarifa de luz,{' '}
-          <span className="italic text-gold-light">en un mismo lugar</span>
+          <span className="italic text-curi-gold-light">en un mismo lugar</span>
         </h1>
         <p
-          className="animate-fade-in-up mt-6 max-w-2xl text-lg leading-relaxed text-stone-300"
+          className="animate-fade-in-up mt-6 max-w-2xl text-lg leading-relaxed text-curi-surface/70"
           style={{ animationDelay: '300ms' }}
         >
           Soy Olinda, asesora inmobiliaria y gestora independiente de energía.
@@ -41,7 +41,7 @@ export default function Hero() {
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-gold px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-gold/30 transition-all duration-300 hover:scale-105 hover:bg-gold-light"
+            className="rounded-full bg-curi-gold px-8 py-3.5 text-sm font-semibold text-curi-charcoal shadow-lg shadow-curi-gold/30 transition-all duration-300 hover:scale-105 hover:bg-curi-gold-light"
           >
             Hablemos por WhatsApp
           </a>

@@ -40,6 +40,7 @@ const services = [
       'Cambio de compañía y tarifa sin coste',
       'Ahorro medio de hasta un 30% al año',
     ],
+    badge: '30% de ahorro medio',
   },
 ]
 
@@ -56,20 +57,27 @@ export default function Services() {
         <div className="mt-14 grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
             <Reveal key={service.title} delay={index * 150}>
-              <article className="group rounded-2xl border border-stone-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:p-10">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-sand text-gold transition-transform duration-300 group-hover:scale-110">
-                  {service.icon}
+              <article className="group rounded-2xl border border-curi-border bg-curi-surface p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:p-10">
+                <div className="flex items-start justify-between">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-curi-bg text-curi-gold transition-transform duration-300 group-hover:scale-110">
+                    {service.icon}
+                  </div>
+                  {service.badge && (
+                    <span className="rounded-full bg-curi-gold/15 px-3 py-1 text-xs font-semibold text-curi-charcoal">
+                      {service.badge}
+                    </span>
+                  )}
                 </div>
-                <h3 className="mt-6 font-serif text-2xl text-charcoal">
+                <h3 className="mt-6 font-serif text-2xl text-curi-charcoal">
                 {service.title}
               </h3>
-              <p className="mt-3 leading-relaxed text-stone-500">
+              <p className="mt-3 leading-relaxed text-curi-charcoal/60">
                 {service.description}
               </p>
               <ul className="mt-5 space-y-2">
                 {service.bullets.map((bullet) => (
-                  <li key={bullet} className="flex items-start gap-2 text-sm text-stone-600">
-                    <span className="mt-0.5 text-gold">✓</span>
+                  <li key={bullet} className="flex items-start gap-2 text-sm text-curi-charcoal/70">
+                    <span className="mt-0.5 text-curi-gold">✓</span>
                     {bullet}
                   </li>
                 ))}
@@ -80,7 +88,7 @@ export default function Services() {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-block text-sm font-semibold text-gold-dark transition-colors hover:text-gold"
+                className="mt-8 inline-block text-sm font-semibold text-curi-gold transition-colors hover:text-curi-gold-light"
               >
                 Solicitar información →
               </a>

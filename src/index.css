@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;
 
-  --color-cream: #ffffff;
-  --color-sand: #f7f6ee;
-  --color-charcoal: #10436d;
-  --color-ink: #1e293b;
-  --color-gold: #e78521;
-  --color-gold-light: #f2a552;
-  --color-gold-dark: #c4701a;
+  --color-curi-bg: #f7f4ee;
+  --color-curi-surface: #ffffff;
+  --color-curi-charcoal: #1a1d20;
+  --color-curi-border: #e3dac9;
+  --color-curi-gold: #c59b27;
+  --color-curi-gold-light: #e2c165;
+  --color-curi-whatsapp: #25d366;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  @apply bg-cream text-ink font-sans antialiased;
+  @apply bg-curi-bg text-curi-charcoal font-sans antialiased;
 }
 
 h1,
@@ -50,13 +50,13 @@ h3 {
 
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(231, 133, 33, 0.5);
+    box-shadow: 0 0 0 0 rgba(197, 155, 39, 0.5);
   }
   70% {
-    box-shadow: 0 0 0 16px rgba(231, 133, 33, 0);
+    box-shadow: 0 0 0 16px rgba(197, 155, 39, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(231, 133, 33, 0);
+    box-shadow: 0 0 0 0 rgba(197, 155, 39, 0);
   }
 }
 

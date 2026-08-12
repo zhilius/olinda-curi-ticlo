@@ -21,7 +21,7 @@ const values = [
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="scroll-mt-20 bg-sand py-20 md:py-28">
+    <section id="sobre-mi" className="scroll-mt-20 bg-curi-bg py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Sobre mí"
@@ -42,17 +42,17 @@ export default function About() {
 
           <Reveal delay={150}>
             <div>
-            <h3 className="font-serif text-2xl text-charcoal md:text-3xl">
+            <h3 className="font-serif text-2xl text-curi-charcoal md:text-3xl">
               De Madrid a toda España
             </h3>
-            <p className="mt-4 leading-relaxed text-stone-600">
+            <p className="mt-4 leading-relaxed text-curi-charcoal/70">
               Llevo más de tres años ayudando a familias y empresas a tomar dos
               de las decisiones más importantes de su vida: dónde vivir y cuánto
               pagan por la energía que consumen. Empecé acompañando a amigos y
               conocidos en la búsqueda de su primera vivienda y, hoy, gestiono
               inmuebles en Madrid y contratos de electricidad por toda España.
             </p>
-            <p className="mt-4 leading-relaxed text-stone-600">
+            <p className="mt-4 leading-relaxed text-curi-charcoal/70">
               Mi gran diferencia: la electricidad. Al ser una gestora
               independiente, negocio directamente con las comercializadoras y
               consigo tarifas más bajas para ti sin coste adicional. El mismo
@@ -63,10 +63,10 @@ export default function About() {
             <div className="mt-8 grid gap-6 sm:grid-cols-3">
               {values.map((value) => (
                 <div key={value.title}>
-                  <p className="font-serif text-lg text-gold-dark">
+                  <p className="font-serif text-lg text-curi-gold">
                     {value.title}
                   </p>
-                  <p className="mt-1 text-sm leading-relaxed text-stone-500">
+                  <p className="mt-1 text-sm leading-relaxed text-curi-charcoal/60">
                     {value.description}
                   </p>
                 </div>

@@ -57,27 +57,27 @@ const sections = [
 
 export default function Privacy() {
   return (
-    <main className="bg-cream py-16 md:py-24">
+    <main className="bg-curi-bg py-16 md:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-curi-charcoal/60">
           Cumplimiento europeo
         </p>
-        <h1 className="mt-3 font-serif text-3xl text-charcoal md:text-4xl">
+        <h1 className="mt-3 font-serif text-3xl text-curi-charcoal md:text-4xl">
           Política de privacidad y cookies
         </h1>
-        <p className="mt-4 leading-relaxed text-stone-500">
+        <p className="mt-4 leading-relaxed text-curi-charcoal/60">
           En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y de la Ley
           Orgánica 3/2018 (LOPDGDD), te informamos de cómo tratamos tus datos.
         </p>
 
         <div className="mt-10 space-y-8">
           {sections.map((section) => (
-            <section key={section.title} className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="font-serif text-xl text-charcoal md:text-2xl">
+            <section key={section.title} className="rounded-2xl border border-curi-border bg-curi-surface p-6 shadow-sm md:p-8">
+              <h2 className="font-serif text-xl text-curi-charcoal md:text-2xl">
                 {section.title}
               </h2>
               {section.paragraphs.map((p, i) => (
-                <p key={i} className="mt-3 leading-relaxed text-stone-600">
+                <p key={i} className="mt-3 leading-relaxed text-curi-charcoal/70">
                   {p}
                 </p>
               ))}
@@ -85,16 +85,16 @@ export default function Privacy() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-2xl bg-charcoal p-8 text-center">
-          <h2 className="font-serif text-xl text-white">
+        <div className="mt-12 rounded-2xl bg-curi-charcoal p-8 text-center">
+          <h2 className="font-serif text-xl text-curi-surface">
             ¿Tienes dudas sobre el tratamiento de tus datos?
           </h2>
-          <p className="mt-2 text-stone-300">
+          <p className="mt-2 text-curi-surface/70">
             Escríbenos a curiasesores@gmail.com y te atenderemos.
           </p>
           <Link
             to="/"
-            className="mt-6 inline-block rounded-full bg-gold px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-gold-light"
+            className="mt-6 inline-block rounded-full bg-curi-gold px-8 py-3 text-sm font-semibold text-curi-charcoal transition-colors hover:bg-curi-gold-light"
           >
             Volver al inicio
           </Link>
